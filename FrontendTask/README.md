@@ -2,7 +2,7 @@
 
 Need to replicate the design at [this link](https://bit.ly/CC-FigmaTemplate).
 
-Just clone the repo on your computer, and open the index.html file if you want to test out locally. Site will be hosted on github pages later, so no setup will be necessary if all you want to do is check out the result.
+Just clone the repo on your computer, and open the index.html file if you want to test out locally.
 
 ### Setup Instructions
 
