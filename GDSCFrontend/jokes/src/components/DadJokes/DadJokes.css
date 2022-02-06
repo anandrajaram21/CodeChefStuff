@@ -1,20 +1,20 @@
 .dadImage {
-  width: 80px;
-  height: 80px;
+  width: 400px;
+  height: 400px;
 }
 
 .dadImage.face1 {
   background-image: url('../../assets/face1.png');
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
   transform: rotate(360deg);
   transition: transform 1s linear;
-  background-repeat: no-repeat;
 }
 
 .dadImage.face2 {
   background-image: url('../../assets/face2.png');
   background-size: contain;
+  background-repeat: no-repeat;
   transform: rotate(360deg);
   transition: transform 1s linear;
-  background-repeat: no-repeat;
 }

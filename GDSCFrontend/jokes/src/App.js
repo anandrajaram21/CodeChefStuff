@@ -1,24 +1,23 @@
 import { Tabs, Tab, TabPanel, TabList, TabPanels } from '@chakra-ui/react';
 import Nav from './components/Navbar/Navbar';
-import DankPanel from './components/DankPanel/DankPanel';
-import DadPanel from './components/DadPanel/DadPanel';
-
+import DadJokes from './components/DadJokes/DadJokes';
+import DankJokes from './components/DankJokes/DankJokes';
 export default function App() {
   return (
     <>
       <Nav />
-      <Tabs isLazy variant={'enclosed'} marginX="5" marginTop={'5'}>
+      <Tabs isLazy margin={'5'}>
         <TabList>
           <Tab>Dank</Tab>
           <Tab>Dad</Tab>
         </TabList>
+
         <TabPanels>
           <TabPanel>
-            <DankPanel />
+            <DankJokes />
           </TabPanel>
-
           <TabPanel>
-            <DadPanel />
+            <DadJokes />
           </TabPanel>
         </TabPanels>
       </Tabs>
