@@ -9,6 +9,19 @@ export default function DankJokes() {
   const [delivery, setDelivery] = useState('');
   const [nextJoke, setNextJoke] = useState(true);
   const [avatar, setAvatar] = useState('face3');
+  const [rotateImg, setRotateImg] = useState(0);
+
+  const clickAvatarOrBox = () => {
+    if (nextJoke === true) {
+      fetchJoke('Pun');
+      setAvatar('face3');
+    } else {
+      setDelivery(joke.delivery);
+      setNextJoke(true);
+      setAvatar('face4');
+    }
+    setRotateImg(1);
+  };
 
   const fetchJoke = jokeType => {
     fetch(`https://v2.jokeapi.dev/joke/Dark?type="twopart"`, {
@@ -40,16 +53,10 @@ export default function DankJokes() {
         <Box marginY={'auto'}>
           <Box
             className={`dankImage ${avatar}`}
-            onClick={e => {
-              if (nextJoke === true) {
-                fetchJoke('Pun');
-                setAvatar('face3');
-              } else {
-                setDelivery(joke.delivery);
-                setNextJoke(true);
-                setAvatar('face4');
-              }
-            }}
+            cursor="pointer"
+            onClick={clickAvatarOrBox}
+            rotateImg={rotateImg}
+            onAnimationEnd={() => setRotateImg(0)}
           ></Box>
           <Text textAlign={'center'} margin="5px">
             Click me!

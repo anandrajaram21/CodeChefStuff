@@ -9,12 +9,26 @@ export default function DadJokes() {
   const [delivery, setDelivery] = useState('');
   const [nextJoke, setNextJoke] = useState(true);
   const [avatar, setAvatar] = useState('face1');
+  const [rotateImg, setRotateImg] = useState(0);
+
+  const clickAvatarOrBox = () => {
+    if (nextJoke === true) {
+      fetchJoke('Pun');
+      setAvatar('face1');
+    } else {
+      setDelivery(joke.delivery);
+      setNextJoke(true);
+      setAvatar('face2');
+    }
+    setRotateImg(1);
+  };
 
   const fetchJoke = jokeType => {
     fetch(`https://v2.jokeapi.dev/joke/Pun?type="twopart"`, {
       method: 'GET',
     })
       .then(res => res.json())
+      .catch(err => console.log(err))
       .then(data => {
         setJoke(data);
       })
@@ -40,16 +54,10 @@ export default function DadJokes() {
         <Box marginY={'auto'}>
           <Box
             className={`dadImage ${avatar}`}
-            onClick={e => {
-              if (nextJoke === true) {
-                fetchJoke('Pun');
-                setAvatar('face1');
-              } else {
-                setDelivery(joke.delivery);
-                setNextJoke(true);
-                setAvatar('face2');
-              }
-            }}
+            cursor="pointer"
+            onClick={clickAvatarOrBox}
+            rotateImg={rotateImg}
+            onAnimationEnd={() => setRotateImg(0)}
           ></Box>
           <Text textAlign={'center'} margin="5px">
             Click me!
