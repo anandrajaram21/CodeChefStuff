@@ -1,0 +1,17 @@
+.dankImage {
+  transition: all 0.25s;
+  width: 80px;
+  height: 80px;
+}
+
+.dankImage.face3 {
+  background-image: url('../../assets/face3.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.dankImage.face4 {
+  background-image: url('../../assets/face4.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}

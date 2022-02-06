@@ -1,16 +1,13 @@
 import {
   Box,
   Flex,
-  Image,
   useColorModeValue,
   Stack,
   Heading,
   Text,
 } from '@chakra-ui/react';
-import { ColorModeSwitcher } from '../ColorModeSwitcher';
-
-import memoji1 from '../assets/memoji1.png';
-import memoji2 from '../assets/memoji2.png';
+import { ColorModeSwitcher } from '../../ColorModeSwitcher';
+import './Navbar.css';
 
 export default function Nav() {
   return (
@@ -26,8 +23,17 @@ export default function Nav() {
           <Flex alignItems={'center'}>
             <Stack direction={'row'} spacing={7}>
               <ColorModeSwitcher />
-
-              <Image src={memoji1} boxSize="80px" />
+              <Box
+                className="navbarImage memoji1"
+                onMouseOver={e => {
+                  e.currentTarget.classList.add('memoji2');
+                  e.currentTarget.classList.remove('memoji1');
+                }}
+                onMouseOut={e => {
+                  e.currentTarget.classList.remove('memoji2');
+                  e.currentTarget.classList.add('memoji1');
+                }}
+              ></Box>
             </Stack>
           </Flex>
         </Flex>
