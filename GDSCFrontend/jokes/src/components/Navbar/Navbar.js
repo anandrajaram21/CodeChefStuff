@@ -23,19 +23,23 @@ export default function Nav() {
           <Flex alignItems={'center'}>
             <Stack direction={'row'} spacing={7}>
               <ColorModeSwitcher />
-              <Box
-                className="navbarImage memoji1"
-                onMouseOver={e => {
-                  e.currentTarget.classList.add('memoji2');
-                  e.currentTarget.classList.remove('memoji1');
-                }}
-                onMouseOut={e => {
-                  e.currentTarget.classList.remove('memoji2');
-                  e.currentTarget.classList.add('memoji1');
-                }}
+              <a
                 href="https://github.com/anandrajaram21"
-                cursor={'pointer'}
-              ></Box>
+                target={'_blank'}
+                rel="noreferrer"
+              >
+                <Box
+                  className="navbarImage memoji1"
+                  onMouseOver={e => {
+                    e.currentTarget.classList.add('memoji2');
+                    e.currentTarget.classList.remove('memoji1');
+                  }}
+                  onMouseOut={e => {
+                    e.currentTarget.classList.remove('memoji2');
+                    e.currentTarget.classList.add('memoji1');
+                  }}
+                ></Box>
+              </a>
             </Stack>
           </Flex>
         </Flex>
