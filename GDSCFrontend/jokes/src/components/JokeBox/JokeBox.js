@@ -1,4 +1,4 @@
-import { SlideFade, Box, Text, Flex, Stack } from '@chakra-ui/react';
+import { SlideFade, Box, Text } from '@chakra-ui/react';
 export default function JokeBox(props) {
   return (
     <Box
