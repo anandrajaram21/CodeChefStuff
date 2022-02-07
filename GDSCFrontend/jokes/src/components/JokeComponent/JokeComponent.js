@@ -48,7 +48,7 @@ export default function JokeComponent({ jokeType, firstFace, secondFace }) {
 
   return (
     <Center marginTop={'5%'}>
-      <Stack direction={'row'} spacing="150px">
+      <Stack direction={['column', 'row']} spacing="150px">
         <Box marginY={'auto'} onClick={clickAvatarOrBox} cursor="pointer">
           <JokeBox setup={joke.setup} delivery={delivery} />
         </Box>
