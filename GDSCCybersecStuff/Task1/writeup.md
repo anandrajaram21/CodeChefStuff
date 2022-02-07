@@ -2,7 +2,7 @@
 
 We are given a WAV file, and we need to find information hidden in it which will save a particular employee of a company from being arrested.
 
-## How I Decided to Go About It
+## How I Solved the Challenge
 
 - The first thing I did was open the .wav file in Audacity to check if the waveforms resembled some shape. I confirmed that there was no identifiable pattern in the shape of the waveforms.
 - The next thing I did was to actually listen to the file. This file sounded very similar to the sounds we get when we press numbers on a dial pad. These are called DTMF tones.

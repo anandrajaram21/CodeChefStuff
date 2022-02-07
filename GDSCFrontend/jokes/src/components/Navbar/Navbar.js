@@ -14,7 +14,7 @@ export default function Nav() {
     <>
       <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
         <Flex h={20} alignItems={'center'} justifyContent={'space-between'}>
-          <Heading>
+          <Heading cursor={'pointer'}>
             Funny
             <Text as="span" color="teal">
               Jokes
@@ -33,6 +33,8 @@ export default function Nav() {
                   e.currentTarget.classList.remove('memoji2');
                   e.currentTarget.classList.add('memoji1');
                 }}
+                href="https://github.com/anandrajaram21"
+                cursor={'pointer'}
               ></Box>
             </Stack>
           </Flex>

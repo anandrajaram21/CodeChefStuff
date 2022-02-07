@@ -1,13 +1,13 @@
-.dadImage {
+.image {
   width: 400px;
   height: 400px;
 }
 
-.dadImage[rotateImg='1'] {
+.image[rotateimg='1'] {
   animation: spin 1s 1;
 }
 
-.dadImage.face1 {
+.image.face1 {
   background-image: url('../../assets/face1.png');
   background-size: cover;
   background-repeat: no-repeat;
@@ -15,8 +15,24 @@
   transition: transform 1s linear;
 }
 
-.dadImage.face2 {
+.image.face2 {
   background-image: url('../../assets/face2.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: rotate(360deg);
+  transition: transform 1s linear;
+}
+
+.image.face3 {
+  background-image: url('../../assets/face3.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: rotate(360deg);
+  transition: transform 1s linear;
+}
+
+.image.face4 {
+  background-image: url('../../assets/face4.png');
   background-size: contain;
   background-repeat: no-repeat;
   transform: rotate(360deg);
