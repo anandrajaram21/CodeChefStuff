@@ -1,0 +1,41 @@
+* {
+  font-family: "Public Sans", sans-serif;
+}
+
+.flex-container {
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.womancoding {
+  width: 60%;
+  height: auto;
+}
+
+.logo {
+  width: 200px;
+}
+
+.button-solid {
+  border-radius: 30px;
+  padding: 10px;
+  background-color: #fc267e;
+  color: white;
+  border: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button-outline {
+  border-radius: 30px;
+  padding: 10px;
+  background-color: white;
+  color: #fc267e;
+  border: #fc267e;
+  font-weight: bold;
+  cursor: pointer;
+}

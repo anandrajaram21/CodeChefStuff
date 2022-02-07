@@ -48,12 +48,17 @@ export default function JokeComponent({ jokeType, firstFace, secondFace }) {
 
   return (
     <Center marginTop={'5%'}>
-      <Stack direction={['column', 'row']} spacing="150px">
-        <Box marginY={'auto'} onClick={clickAvatarOrBox} cursor="pointer">
+      <Stack direction={{ base: 'column', lg: 'row' }} spacing="150px">
+        <Box
+          marginX={'auto'}
+          marginY={'auto'}
+          onClick={clickAvatarOrBox}
+          cursor="pointer"
+        >
           <JokeBox setup={joke.setup} delivery={delivery} />
         </Box>
 
-        <Box marginY={'auto'}>
+        <Box marginX={'auto'} marginY={'auto'}>
           <Box
             className={`image ${avatar}`}
             cursor="pointer"

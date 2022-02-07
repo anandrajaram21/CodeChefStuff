@@ -7,7 +7,7 @@ export default function JokeBox(props) {
       textColor={'black'}
       fontWeight="bold"
       fontSize={'xl'}
-      width="450px"
+      width={{ base: '300px', lg: '500px' }}
       borderRadius={'lg'}
     >
       <SlideFade in>
