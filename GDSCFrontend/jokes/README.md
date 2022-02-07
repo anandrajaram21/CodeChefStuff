@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 You can find the final website deployed here: [https://funnyjokes.vercel.app](https://funnyjokes.vercel.app)
 
-![theoutput](https://imgur.com/a/IRqaBNM)
+![theoutput](https://i.imgur.com/jWS2fhX.png)
 
 ## Testing the Project Locally
 
